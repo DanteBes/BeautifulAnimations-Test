@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: center
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 2rem
+}
+
+.card {
+  border: 1px solid #00FFD2;
+}
