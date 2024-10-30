@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  padding: 1rem 1.5rem
+  padding: 0.5rem 1rem 0
 }
 
 .header__title {
@@ -27,6 +27,7 @@ header {
 
 .card-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 1.5em;
@@ -34,7 +35,19 @@ header {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
   height: auto;
   width: 140px;
   padding: 1rem;
+  position: relative;
+}
+
+.card_button {
+  display: flex;
+  align-self: start;
+  border-radius: 0.2em;
+  background-color: transparent;
+  padding: 0.2rem  1rem 0.2rem 1rem;
 }
