@@ -41,8 +41,47 @@ header {
   height: auto;
   width: 140px;
   padding: 1rem;
+  -webkit-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+  -moz-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+  box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
   position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
+
+.card_theme_red::before {
+  content: " ";
+  position: absolute ;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0.2em;
+  z-index: 2;
+  background-color: var(--bg-red);
+}
+
+.card_theme_brigh::before {
+  content: " ";
+  position: absolute ;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0.2em;
+  z-index: 2;
+  background-color: var(--bg-brigh);
+}
+
+.card_theme_git-mod::before {
+  content: " ";
+  position: absolute ;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0.2em;
+  z-index: 2;
+  background-color: var(--bg-git);
+}
+
 
 .card_button {
   display: flex;
