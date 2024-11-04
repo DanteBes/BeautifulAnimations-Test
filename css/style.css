@@ -62,8 +62,14 @@ header {
   left: 0;
   height: 100%;
   width: 0.2em;
-  z-index: 2;
   background-color: var(--bg-red);
+  transform: 0.5s;
+  z-index: -1;
+}
+
+.card_theme_red:hover::before {
+  color: var(--bg-bright);
+  width: 100%;
 }
 
 .card_theme_bright::before {
@@ -71,10 +77,14 @@ header {
   position: absolute ;
   top: 0;
   left: 0;
+  z-index: -1;
   height: 100%;
   width: 0.2em;
-  z-index: 2;
   background-color: var(--bg-bright);
+}
+
+.card_theme_bright:hover::before {
+  width: 100%;
 }
 
 .card_theme_git-mod::before {
@@ -82,12 +92,15 @@ header {
   position: absolute ;
   top: 0;
   left: 0;
+  z-index: -1;
   height: 100%;
   width: 0.2em;
-  z-index: 2;
   background-color: var(--bg-git);
 }
 
+.card_theme_git-mod:hover::before {
+  width: 100%;
+}
 
 .card_button {
   display: flex;
