@@ -62,8 +62,8 @@ header {
   left: 0;
   height: 100%;
   width: 0.2em;
+  transition: width 0.5s ease;
   background-color: var(--bg-red);
-  transform: 0.5s;
   z-index: -1;
 }
 
@@ -80,6 +80,7 @@ header {
   z-index: -1;
   height: 100%;
   width: 0.2em;
+  transition: width 0.5s ease;
   background-color: var(--bg-bright);
 }
 
@@ -95,6 +96,7 @@ header {
   z-index: -1;
   height: 100%;
   width: 0.2em;
+  transition: width 0.5s ease;
   background-color: var(--bg-git);
 }
 
