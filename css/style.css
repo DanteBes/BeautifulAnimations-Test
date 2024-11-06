@@ -42,6 +42,7 @@ header {
   height: auto;
   width: 240px;
   padding: 1rem;
+  border-radius: 0.8em;
   -webkit-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
   -moz-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
   box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
@@ -50,9 +51,16 @@ header {
   z-index: 1;
 }
 
-.card__tite {
+.card__title {
   font-size: 2rem;
   font-weight: 500;
+}
+
+.card__title:hover {
+  color: var( --font-bright);
+}
+.card__text-bright:hover {
+  color: var( --font-bright);
 }
 
 .card_theme_red::before {
@@ -64,6 +72,9 @@ header {
   width: 0.2em;
   transition: width 0.5s ease;
   background-color: var(--bg-red);
+  -webkit-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+  -moz-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+  box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
   z-index: -1;
 }
 
@@ -75,29 +86,35 @@ header {
 .card_theme_bright::before {
   content: " ";
   position: absolute ;
-  top: 0;
+  bottom:  0;
   left: 0;
   z-index: -1;
-  height: 100%;
-  width: 0.2em;
-  transition: width 0.5s ease;
+  width: 100%;
+  height: 0.2em;
+  transition: height 0.5s ease;
   background-color: var(--bg-bright);
+  -webkit-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+  -moz-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+  box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
 }
 
 .card_theme_bright:hover::before {
-  width: 100%;
+  height: 100%;
 }
 
 .card_theme_git-mod::before {
   content: " ";
   position: absolute ;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: -1;
   height: 100%;
   width: 0.2em;
   transition: width 0.5s ease;
   background-color: var(--bg-git);
+  -webkit-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+  -moz-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+  box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
 }
 
 .card_theme_git-mod:hover::before {
@@ -111,3 +128,8 @@ header {
   background-color: transparent;
   padding: 0.2rem  1rem 0.2rem 1rem;
 }
+
+.card_button:hover {
+  color: var(--font-bright);
+  background-color: var(--font-dark);
+} 
