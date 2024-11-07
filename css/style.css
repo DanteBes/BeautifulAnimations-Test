@@ -56,11 +56,8 @@ header {
   font-weight: 500;
 }
 
-.card__title:hover {
-  color: var( --font-bright);
-}
-.card__text-bright:hover {
-  color: var( --font-bright);
+.card__theme_text-bright:hover {
+  color: var(--font-bright);
 }
 
 .card_theme_red::before {
