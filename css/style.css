@@ -6,7 +6,7 @@ body {
 header {
   display: flex;
   justify-content: center;
-  padding: 0.5rem 1rem 0
+  padding: 0.5rem 1rem 0;
 }
 
 .header__title {
@@ -27,12 +27,25 @@ header {
   top: 0;
   left: 0;
   overflow: hidden;
-  z-index: 1
+  width: 0;
+  height: 100%;
+  animation: filling 5s linear infinite;
+  border-right: 3px solid var(--bg-green);
+}
+
+@keyframes filling {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  70% , 90%{
+    width: 100%
+  }
 }
 
 .contents {
   height: 100%;
-  background-color: rgba(250, 250, 250, 1)
+  background-color: rgba(250, 250, 250, 1);
+  z-index: 0;
 }
 
 .content-section {
